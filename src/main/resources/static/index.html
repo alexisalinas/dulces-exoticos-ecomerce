@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Dulces Exóticos</title>
+    <link rel="icon" href="pic/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/catalogo.css" >
+</head>
+<body>
+    <header>
+        <button onclick="window.location.href='login.html'" class="login-btn">Iniciar Sesión / Registrarse</button>
+        <h2>Catálogo de Dulces Exóticos</h2>
+        <span id="bienvenida"></span>
+    </header>
+    <div id="filtros" class="filtros">
+        <button onclick="filtrarProductos('todos')">Todos</button>
+        <button onclick="filtrarProductos('dulce')">Dulce</button>
+        <button onclick="filtrarProductos('picante')">Picante</button>
+        <button onclick="filtrarProductos('amargo')">Amargo</button>
+        <button onclick="filtrarProductos('agrio')">Agrio</button>
+        <button onclick="filtrarProductos('inexplicable')">Inexplicable</button>
+    </div>
+    <div id="productos">
+    </div>
+    <div id="listaProductos"></div>
+    <div id="carrito"></div>
+    <script src="js/index.js"></script>
+</body>
+</html>

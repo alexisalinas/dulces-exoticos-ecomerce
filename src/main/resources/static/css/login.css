@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(135deg, #f8e1f4, #e0f7fa, #fffde7);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container {
+    background: #fff;
+    padding: 40px 30px 30px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.2);
+    width: 350px;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 24px;
+    color: #2980b9;
+    letter-spacing: 1px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 10px 0 18px 0;
+    border: 1px solid #b2bec3;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f7fafd;
+}
+button[type="submit"], #toggleBtn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: linear-gradient(90deg, #2980b9 60%, #6dd5fa 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#toggleBtn {
+    background: none;
+    color: #2980b9;
+    border: none;
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#message {
+    margin-top: 16px;
+    font-size: 15px;
+    min-height: 22px;
+    font-weight: bold;
+    text-align: center;
+}

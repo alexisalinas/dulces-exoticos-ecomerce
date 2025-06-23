@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Vendedor - Dulces Exóticos</title>
+    <link rel="stylesheet" href="css/vendedor.css">
+</head>
+<body>
+    <header>
+        <span id="bienvenida-vendedor"></span>
+        <h2>Panel del Vendedor</h2>
+        <button onclick="window.location.href='index.html'" class="catalogo-btn">Ir al Catálogo</button>
+    </header>
+    <main>
+        <section class="agregar-dulce">
+            <h3>Agregar Dulce</h3>
+            <form id="formAgregar">
+                <input type="text" id="nombre" placeholder="Nombre del dulce" required>
+                <input type="text" id="descripcion" placeholder="Descripción" required>
+                <input type="number" id="precio" placeholder="Precio" min="1" required>
+                <input type="number" id="existencia" placeholder="Existencia" min="1" required>
+                <input type="text" id="imagenUrl" placeholder="URL de la imagen" required>
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecciona una</option>
+                    <option value="dulce">Dulce</option>
+                    <option value="picante">Picante</option>
+                    <option value="amargo">Amargo</option>
+                    <option value="agrio">Agrio</option>
+                    <option value="inexplicable">Inexplicable</option>
+                </select>
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+        <section class="lista-dulces">
+            <h3>Mis Dulces</h3>
+            <div id="listaDulces"></div>
+        </section>
+    </main>
+    <script src="js/vendedor.js"></script>
+</body>
+</html>
